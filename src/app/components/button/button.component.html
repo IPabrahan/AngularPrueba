@@ -1,0 +1,34 @@
+<button [ngClass]="{
+    'danger': color === 1,
+    'success': color === 2,
+    'crazy': color === 3,
+    'neon': color === 4,
+    'retro': color === 5,
+    'bubble': color === 6,
+    'skeuomorphic': color === 7,
+    'glitch': color === 8,
+    'minimalist': color === 9,
+    'three-d': color === 10,
+    'liquid': color === 11,
+    'neumorphic': color === 12,
+    'gradient-border': color === 13
+  }" class="button" (click)="emitirEvento()">
+    {{text}}
+</button>
+<button [ngClass]="{
+    'danger': color === 1,
+    'success': color === 2,
+    'crazy': color === 3,
+    'neon': color === 4,
+    'retro': color === 5,
+    'bubble': color === 6,
+    'skeuomorphic': color === 7,
+    'glitch': color === 8,
+    'minimalist': color === 9,
+    'three-d': color === 10,
+    'liquid': color === 11,
+    'neumorphic': color === 12,
+    'gradient-border': color === 13
+  }" class="button" (click)="aleatorio()">
+    {{text}}
+</button>

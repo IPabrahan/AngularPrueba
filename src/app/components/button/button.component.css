@@ -1,0 +1,288 @@
+/* Base button styles */
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Danger button */
+.button.danger {
+    background-color: #ff4136;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(255, 65, 54, 0.3);
+}
+
+.button.danger:hover {
+    background-color: #e60000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(255, 65, 54, 0.5);
+}
+
+/* Success button */
+.button.success {
+    background-color: #2ecc40;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(46, 204, 64, 0.3);
+}
+
+.button.success:hover {
+    background-color: #29a33a;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(46, 204, 64, 0.5);
+}
+
+/* Crazy button */
+.button.crazy {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00);
+    color: #333;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+    padding: 15px 30px;
+    font-family: 'Comic Sans MS', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: crazyAnimation 3s infinite;
+}
+
+.button.crazy:hover {
+    filter: hue-rotate(90deg);
+    transform: rotate(5deg) scale(1.1);
+}
+
+@keyframes crazyAnimation {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(5deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+/* 1. Neon button */
+.button.neon {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+.button.neon:hover {
+    background-color: #0ff;
+    color: #000;
+    box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+}
+
+/* 2. Retro button */
+.button.retro {
+    background-color: #ffd700;
+    color: #8b4513;
+    border: 3px solid #8b4513;
+    border-radius: 0;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0 #8b4513;
+}
+
+.button.retro:hover {
+    background-color: #8b4513;
+    color: #ffd700;
+    box-shadow: -4px -4px 0 #ffd700;
+}
+
+/* 3. Bubble button */
+.button.bubble {
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.button.bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(52, 152, 219, 0.2);
+}
+
+/* 4. Skeuomorphic button */
+.button.skeuomorphic {
+    background: linear-gradient(to bottom, #f0f0f0, #d3d3d3);
+    color: #333;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    text-shadow: 0 1px 0 #fff;
+}
+
+.button.skeuomorphic:hover {
+    background: linear-gradient(to bottom, #e6e6e6, #c9c9c9);
+}
+
+.button.skeuomorphic:active {
+    background: linear-gradient(to bottom, #d3d3d3, #f0f0f0);
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 5. Glitch button */
+.button.glitch {
+    background-color: #ff00ff;
+    color: #00ffff;
+    text-shadow: 2px 2px #ff0000, -2px -2px #0000ff;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.button.glitch:hover {
+    animation: glitchEffect 0.3s infinite;
+}
+
+@keyframes glitchEffect {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    25% {
+        clip-path: polygon(5% 0, 100% 5%, 95% 100%, 0 95%);
+    }
+
+    50% {
+        clip-path: polygon(0 5%, 95% 0, 100% 95%, 5% 100%);
+    }
+
+    75% {
+        clip-path: polygon(5% 5%, 95% 5%, 95% 95%, 5% 95%);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/* 6. Minimalist button */
+.button.minimalist {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 0;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.button.minimalist:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* 7. 3D button */
+.button.three-d {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 #45a049, 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.button.three-d:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 0 #45a049, 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button.three-d:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* 8. Liquid button */
+.button.liquid {
+    background-color: #4285f4;
+    color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.button.liquid::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 45%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: ripple 10s linear infinite;
+}
+
+@keyframes ripple {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+    }
+}
+
+/* 9. Neumorphic button */
+.button.neumorphic {
+    background-color: #e0e5ec;
+    color: #4d4d4d;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff;
+}
+
+.button.neumorphic:hover {
+    box-shadow: inset 8px 8px 15px #a3b1c6, inset -8px -8px 15px #ffffff;
+}
+
+/* 10. Gradient border button */
+.button.gradient-border {
+    background-color: white;
+    color: #333;
+    border: 4px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;
+    position: relative;
+}
+
+.button.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00);
+    border-radius: 14px;
+    z-index: -1;
+}
+
+.button.gradient-border:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.button.gradient-border:hover::before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(5px);
+}
